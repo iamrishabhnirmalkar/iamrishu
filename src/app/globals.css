@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "SPproDisplay", sans-serif;
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@font-face {
+  font-family: "SPproDisplay";
+  src: ("/public/font/SFPRODISPLAYREGULAR.OTF") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SPproDisplay";
+  src: ("/public/font/SFPRODISPLAYBOLD.OTF") format("opentype");
+  font-weight: bold;
+  font-style: bold;
+}
