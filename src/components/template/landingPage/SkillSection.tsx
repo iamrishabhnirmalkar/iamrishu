@@ -1,10 +1,11 @@
+import Heading from "@/components/ui/Heading/Heading";
 import React from "react";
 
 export default function SkillSection() {
   return (
     <>
-      <section>
-        <h2 className="text-3xl">Skills</h2>
+      <section className="lg:px-10 px-3">
+        <Heading bgheading="Skills" heading="Skills" />
       </section>
     </>
   );

@@ -1,10 +1,10 @@
-import Button from "@/components/ui/Button/Button";
 import React from "react";
+import Heading from "@/components/ui/Heading/Heading";
 
 export default function Aboutsection() {
   return (
-    <div>
-      <h1>asdh</h1>
-    </div>
+    <section className="lg:px-10 px-3">
+      <Heading bgheading="About" heading="About" />
+    </section>
   );
 }
