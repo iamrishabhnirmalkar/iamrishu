@@ -79,7 +79,7 @@ export const footerIcons: IPageRoute[] = [
     href: "",
     size: 25,
     hoverColor:
-      "transition-transform duration-300 ease-in-out transform hover:scale-90 cursor-pointer hover:text-white",
+      "transition-transform duration-300 ease-in-out transform hover:scale-90 cursor-pointer hover:text-gray-500",
   },
   {
     name: "Youtube",

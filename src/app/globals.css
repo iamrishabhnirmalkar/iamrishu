@@ -3,14 +3,21 @@
 @tailwind utilities;
 
 body {
-  font-family: "SPproDisplay", sans-serif;
-  background-color: rgb(0, 0, 0);
-  color: white;
+  @apply bg-backgroundcolor text-white;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+
+  .glassmorphism {
+    background: rgba(59, 59, 59, 0.22);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(22, 22, 22, 0.1);
+    backdrop-filter: blur(1.5px);
+    -webkit-backdrop-filter: blur(1.5px);
+    border: 1px solid rgba(59, 59, 59, 0.66);
   }
 }
 

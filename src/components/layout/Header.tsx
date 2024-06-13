@@ -9,7 +9,7 @@ export default function Header() {
       {/* Navlink for desktop */}
       <nav className="hidden lg:block py-4">
         <header className="flex justify-center items-center">
-          <ul className="flex px-10 py-3 rounded-full space-x-20 bg-customblack02 border  border-white">
+          <ul className="flex px-10 py-3 rounded-full space-x-20 glassmorphism  ">
             {navpageRoute.map((route) => (
               <li className="uppercase text-xl">
                 <a href={route.href}>
