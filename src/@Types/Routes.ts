@@ -5,4 +5,5 @@ export interface IPageRoute {
   href: string;
   icon: IconType;
   size: number;
+  hoverColor?: string;
 }
