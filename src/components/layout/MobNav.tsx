@@ -4,12 +4,17 @@ import { navpageRoute } from "./config";
 import { RiMenu2Line } from "react-icons/ri";
 import { AiOutlineClose } from "react-icons/ai";
 import { motion, AnimatePresence } from "framer-motion";
+import Button from "../ui/Button/Button";
 
 export default function MobNav() {
   const [mobileMenu, setMobileMenu] = useState(false);
 
   const toggleMobileMenu = () => {
     setMobileMenu(!mobileMenu);
+  };
+
+  const redirectToWhatsApp = () => {
+    window.location.href = "https://alvo.chat/4yox";
   };
 
   return (
@@ -27,7 +32,7 @@ export default function MobNav() {
               <RiMenu2Line size={25} />
             )}
           </div>
-          <button>Hire Me</button>
+          <Button buttonText="Hire me" onClick={redirectToWhatsApp} />
         </header>
         <AnimatePresence>
           {mobileMenu && (
@@ -40,10 +45,10 @@ export default function MobNav() {
             >
               <div className="bg-custompurple02 w-full h-full flex justify-center items-center">
                 <ul className="flex-col text-center space-y-2">
-                  {navpageRoute.map((route) => (
+                  {navpageRoute.map((route, index) => (
                     <li
                       className="uppercase text-xl hover:px-2 rounded hover:bg-custompurple02 transition-all duration-300"
-                      key={route.id}
+                      key={index}
                     >
                       <a href={route.href}>{route.name}</a>
                     </li>

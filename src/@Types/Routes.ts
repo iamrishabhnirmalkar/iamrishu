@@ -1,5 +1,8 @@
+import { IconType } from "react-icons";
+
 export interface IPageRoute {
-  id?: number;
   name: string;
   href: string;
+  icon: IconType;
+  size: number;
 }
