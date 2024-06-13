@@ -8,8 +8,8 @@ export default function Footer() {
     <footer className="py-4 px-3 ">
       <div className="flex justify-center items-center  ">
         <div className="flex justify-center items-center p-2 glassmorphism lg:space-x-16 space-x-3 ">
-          {footerIcons.map((item) => (
-            <a href={item.href}>
+          {footerIcons.map((item, index) => (
+            <a href={item.href} key={index}>
               <item.icon size={item.size} className={item.hoverColor} />
             </a>
           ))}

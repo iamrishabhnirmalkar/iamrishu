@@ -4,7 +4,7 @@ import Heading from "@/components/ui/Heading/Heading";
 export default function ContactSection() {
   return (
     <section className="lg:px-10 px-3">
-      <Heading bgheading="contact" heading="contact" />
+      <Heading bgheading="Contact" heading="Contact" />
     </section>
   );
 }
