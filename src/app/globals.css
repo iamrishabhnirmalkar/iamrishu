@@ -19,6 +19,14 @@ body {
     -webkit-backdrop-filter: blur(1.5px);
     border: 1px solid rgba(59, 59, 59, 0.66);
   }
+
+  .glow-icon {
+    transition: all 0.3s ease-in-out;
+  }
+
+  .glow-icon:hover {
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.7));
+  }
 }
 
 @font-face {
