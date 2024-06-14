@@ -1,4 +1,5 @@
 export interface IButtonType {
   buttonText: string;
-  onClick: () => void;
+  type: "submit" | "button" | "reset";
+  onClick: (e: any) => void;
 }

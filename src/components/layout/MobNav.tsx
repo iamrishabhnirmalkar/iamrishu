@@ -32,7 +32,11 @@ export default function MobNav() {
               <RiMenu2Line size={25} />
             )}
           </div>
-          <Button buttonText="Hire me" onClick={redirectToWhatsApp} />
+          <Button
+            buttonText="Hire me"
+            type="submit"
+            onClick={redirectToWhatsApp}
+          />
         </header>
         <AnimatePresence>
           {mobileMenu && (
