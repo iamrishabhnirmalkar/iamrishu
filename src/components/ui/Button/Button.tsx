@@ -1,15 +1,11 @@
 import React from "react";
+import "./style.css";
 import { IButtonType } from "@/@Types/Button";
 
-export default function Button({ buttonText, onClick }: IButtonType) {
+export default function Button({ buttonText, onClick, type }: IButtonType) {
   return (
-    <div>
-      <button
-        className="border-t-2 border-r-2 border-custompurple03 p-2"
-        onClick={onClick}
-      >
-        <p className="font-bold hover:text-xl">{buttonText}</p>
-      </button>
-    </div>
+    <button className="button" onClick={onClick} type={type}>
+      {buttonText}
+    </button>
   );
 }
