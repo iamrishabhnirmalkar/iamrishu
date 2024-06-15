@@ -42,10 +42,7 @@ export default function ContactSection() {
     <section className="lg:px-10 px-3">
       <Heading bgheading="Contact" heading="Contact" />
       <div className=" w-full flex justify-center items-center">
-        <form
-          action=""
-          className="glassmorphism glassmorphism w-full lg:w-6/12	 px-2 py-10"
-        >
+        <form action="" className="glassmorphism w-full lg:w-6/12	 px-2 py-10">
           <Input
             id="name"
             label="Names"
