@@ -1,12 +1,13 @@
 import React from "react";
 import "./style.css";
+import Link from "next/link";
 
 export default function Resume() {
   const resumeLink =
-    "https://drive.google.com/uc?export=download&id=YOUR_FILE_ID";
+    "https://drive.google.com/file/d/1pnRr3Qd_eIkuhwQSkFEkmdFmn1y5ORs4/view?usp=sharing";
 
   return (
-    <a className="Documents-btn">
+    <Link href={resumeLink} className="Documents-btn" download>
       <span className="folderContainer">
         <svg
           className="fileBack"
@@ -86,6 +87,6 @@ export default function Resume() {
         </svg>
       </span>
       <p className="text">Resume</p>
-    </a>
+    </Link>
   );
 }
