@@ -22,21 +22,17 @@ export default function ContactSection() {
     setMessage(e.target.value);
   };
 
-  const handleSubmit = (e: any) => {
+  const handleSubmit = (e:any) => {
     e.preventDefault();
-    console.log("Form submitted with values:", {
-      name,
-      email,
-      message,
-    });
+    console.log("Form submitted with values:", { name, email, message });
 
-    setName("");
-    setEmail("");
-    setMessage("");
-  };
+    // Generate WhatsApp message link
+    const whatsappMessage = `Hello, I am ${name}. My email is ${email}. Message: ${message}`;
+    const encodedMessage = encodeURIComponent(whatsappMessage);
+    const whatsappLink = `https://wa.me/7803002963?text=${encodedMessage}`;
 
-  const handleClick = () => {
-    console.log("Button clicked");
+    // Redirect to WhatsApp link
+    window.location.href = whatsappLink;
   };
   return (
     <section className="lg:px-10 px-3">
