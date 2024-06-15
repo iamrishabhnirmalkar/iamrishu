@@ -8,13 +8,13 @@ export default function Aboutsection() {
       <Heading bgheading="About" heading="About" />
       <div className="glassmorphism w-full py-10 px-3 ">
         <p className="text-justify pb-4">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum
-          quam est nostrum illo nam, ratione quae quibusdam non iusto
-          repellendus perferendis architecto dolores officia ullam eveniet ipsum
-          sit similique ipsa! Lorem ipsum dolor sit, amet consectetur
-          adipisicing elit. Aliquam pariatur incidunt quasi nihil et dolores
-          repellat voluptatum, aperiam fugiat modi explicabo aliquid, tenetur
-          ratione doloremque temporibus eveniet voluptas labore vero.
+          I have a strong foundation in frontend technologies. My skills include
+          JavaScript, Python, TypeScript, ReactJS, NextJS, Redux, ExpressJS,
+          Laravel, SQL, NoSQL, and CMS platforms (WordPress, Wix, Shopify),
+          along with tools like Git, Postman, and Figma. I also hold a digital
+          marketing certification and one year of experience, allowing me to
+          enhance user engagement through integrated marketing strategies. Thank
+          you for considering my application. Please find my resume attached.
         </p>
         <Resume />
       </div>
